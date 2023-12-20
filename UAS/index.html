@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/bulutangkis-removebg-preview.png">
+</head>
+<body>
+    <div class="container" style="width: 100%; height: 100%githu;">
+        <img src="/img/banner.jpg" alt="banner" style="width: 100%; height: 200px; object-fit: cover;">
+        <div id="display" style="width: 100%; background-color: white;"></div>
+        <div class="content">
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </div>
+                <h1>BADMINTON / BULUTANGKIS</h1>
+                <img src="/img/th.jpg" alt="bulutangkis1">
+            <div class="description">
+                <p>
+                    Olahraga yang dimainkan dengan kok dan raket, kemungkinan berkembang di Mesir kuno sekitar 2000 tahun lalu tetapi juga disebut-sebut di India dan Republik Rakyat Tiongkok.
+                    <br>
+                    Di Tiongkok, terdapat permainan yang disebut Jianzi, yang melibatkan penggunaan kok tetapi tanpa raket. Alih-alih, koknya dimanipulasi dengan kaki. Objektif permainan ini adalah untuk menjaga kok agar tidak menyentuh tanah selama mungkin tanpa menggunakan tangan.
+                    <br>
+                    Di Inggris sejak zaman pertengahan permainan anak-anak yang disebut Battledores dan Shuttlecocks sangat populer. Anak-anak pada waktu itu biasanya akan memakai dayung/tongkat (Battledores) dan bersiasat bersama untuk menjaga kok tetap di udara dan mencegahnya dari menyentuh tanah. Ini cukup populer untuk menjadi nuansa harian di jalan-jalan London pada tahun 1854 ketika majalah Punch memublikasikan kartun untuk ini.
+                    <br>
+                    Penduduk Inggris membawa permainan ini ke Jepang, Republik Rakyat Tiongkok, dan Siam (sekarang Thailand) selagi mereka mengolonisasi Asia. Ini kemudian dengan segera menjadi permainan anak-anak di wilayah setempat mereka.
+                    <br>
+                    Olahraga kompetitif bulu tangkis diciptakan oleh petugas Tentara Britania di Pune, India pada abad ke-19 saat mereka menambahkan jaring dan memainkannya secara bersaingan. Oleh sebab kota Pune dikenal sebelumnya sebagai Poona, permainan tersebut juga dikenali sebagai Poona pada masa itu.
+                </p>
+            <div class="gaya-pukulan" style="margin-left: 2rem;">
+                <h3>Gaya Pukulan</h3>
+                <p>American Grip <br/> Forehand Grip <br/> Backhand Grip <br/> Combination Grip Teknik Pukulan Service</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> &copy;Copyright-2023 Arya Ardiansyah - 231011701148</p>
+    </div>
+    <script>
+        // alert('Selamat datang di BuluTangkis Jakbar');
+    </script>
+    <script type="text/javascript">
+        var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        var date = new Date();
+        var day = date.getDate();
+        var month = date.getMonth();
+        var thisDay = myDays[thisDay];
+        var yy = date.getFullYear();
+        var year = (yy < 1000) ? yy + 1900 : yy;
+
+        let date = new Date();
+        let jam = date.getHours();
+        let menit = date.getMinutes();
+        let detik = date.getSeconds();
+
+        document.getElementById('display').innerHTML = jam + ':' + detik + ':' + menit;
+        
+        // alert(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+    </script>
+</body>
+</html>
